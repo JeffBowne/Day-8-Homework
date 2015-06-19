@@ -181,12 +181,38 @@
 // var view = new photoAlbum();
 
 
+// //---------------------------------Person prototype
 
+// function Person(fname, lname) {
+// 	this.fname=fname;
+// 	this.lname=lname;
+// 	this.name = function() {
+// 		return this.fname + " " + this.lname;
+// 	}
+// }
 
+// function Teacher() {
+// 	Person.apply(this, arguments);
+// 	this.classname=arguments[2];
+// 	this.tenure=arguments[3];
+// }
 
+// function Student() {
+// 	Person.apply(this, arguments);
+// 	this.historygrade=arguments[2];
+// 	this.mathgrade=arguments[3];
+// 	this.englishgrade=arguments[4];
+// }
 
+// var	coleson = new Teacher('Mitchell', 'Coleson', 'History Teacher', '8 Years');
+// var	swanson = new Teacher('Debra', 'Swanson', 'Math Teacher', '2 Years');
+// var	danzig = new Teacher('Glenn', 'Danzig', 'English Teacher', '666 Years');
 
-
-
+// var sam = new Student('Samantha', 'Gill', 'History: A', 'Math: D', 'English A');
+// var timmy = new Student('Timothy', 'Beckett', 'History: B', 'Math: C', 'English A');
+// var billy = new Student('William', 'Madison', 'History: D', 'Math: F', 'English D');
+// var jimmy = new Student('James', 'McQueen', 'History: A', 'Math: A', 'English B');
+// var sarah = new Student('Sarah', 'Millinghausen', 'History: B', 'Math: A', 'English A');
+// var jenny = new Student('Jennifer', 'Riet', 'History: D', 'Math: D', 'English A');
 
 
