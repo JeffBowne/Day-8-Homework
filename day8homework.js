@@ -116,17 +116,17 @@
 // 	this.currentRecord = this.albums[this.counter];
 
 	
-// 	this.albums.push(new Album('The Jesus Lizard', 'Shot'))
-// 	this.albums.push(new Album('Young Widows', 'Easy Pain'))
-// 	this.albums.push(new Album("Mos Def", "Black on Both Sides"))
-// 	this.albums.push(new Album("Lauryn Hill", "The Misseducation of Lauryn Hill"))
-// 	this.albums.push(new Album('Fight Amp', 'Constantly Off'))
-// 	this.albums.push(new Album('Faking', 'Godddamn Cowards'))
-// 	this.albums.push(new Album('Black Flag', 'Damaged'))
-// 	this.albums.push(new Album('Minor Threat', 'Out Of Step'))
-// 	this.albums.push(new Album('Botch', 'We Are The Romans'))
-// 	this.albums.push(new Album('Coalesce', 'Functoning on Impatience'))
-// 	this.albums.push(new Album('Converge', 'You Fail Me'))
+// 	this.albums.push(new Album('The Jesus Lizard', 'Shot'));
+// 	this.albums.push(new Album('Young Widows', 'Easy Pain'));
+// 	this.albums.push(new Album("Mos Def", "Black on Both Sides"));
+// 	this.albums.push(new Album("Lauryn Hill", "The Misseducation of Lauryn Hill"));
+// 	this.albums.push(new Album('Fight Amp', 'Constantly Off'));
+// 	this.albums.push(new Album('Faking', 'Godddamn Cowards'));
+// 	this.albums.push(new Album('Black Flag', 'Damaged'));
+// 	this.albums.push(new Album('Minor Threat', 'Out Of Step'));
+// 	this.albums.push(new Album('Botch', 'We Are The Romans'));
+// 	this.albums.push(new Album('Coalesce', 'Functoning on Impatience'));
+// 	this.albums.push(new Album('Converge', 'You Fail Me'));
 
 // 	this.nextRecord = function() { 
 // 		if (this.counter < this.albums.length - 1) {
@@ -204,15 +204,46 @@
 // 	this.englishgrade=arguments[4];
 // }
 
-// var	coleson = new Teacher('Mitchell', 'Coleson', 'History Teacher', '8 Years');
-// var	swanson = new Teacher('Debra', 'Swanson', 'Math Teacher', '2 Years');
-// var	danzig = new Teacher('Glenn', 'Danzig', 'English Teacher', '666 Years');
+// function School(teachers, students) {
+// 	this.teachers = [];
+// 	this.students = [];
 
-// var sam = new Student('Samantha', 'Gill', 'History: A', 'Math: D', 'English A');
-// var timmy = new Student('Timothy', 'Beckett', 'History: B', 'Math: C', 'English A');
-// var billy = new Student('William', 'Madison', 'History: D', 'Math: F', 'English D');
-// var jimmy = new Student('James', 'McQueen', 'History: A', 'Math: A', 'English B');
-// var sarah = new Student('Sarah', 'Millinghausen', 'History: B', 'Math: A', 'English A');
-// var jenny = new Student('Jennifer', 'Riet', 'History: D', 'Math: D', 'English A');
+// 	this.teachers.push(new Teacher('Mitchell', 'Coleson', 'History Teacher', '8 Years'))
+// 	this.teachers.push(new Teacher('Debra', 'Swanson', 'Math Teacher', '2 Years'))
+// 	this.teachers.push(new Teacher('Glenn', 'Danzig', 'English Teacher', '666 Years'))
+
+// 	this.students.push(new Student('Sarah', 'Millinghausen', 'History: B', 'Math: A', 'English A'))
+// 	this.students.push(new Student('Samantha', 'Gill', 'History: A', 'Math: D', 'English A'))
+// 	this.students.push(new Student('Timothy', 'Beckett', 'History: B', 'Math: C', 'English A'))
+// 	this.students.push(new Student('William', 'Madison', 'History: D', 'Math: F', 'English D'))
+// 	this.students.push(new Student('James', 'McQueen', 'History: A', 'Math: A', 'English B'))
+// 	this.students.push(new Student('Jennifer', 'Riet', 'History: D', 'Math: D', 'English A'))
+
+// 	this.listTeacherInfo = function() {
+// 		for (var i = 0; i< this.teachers.length; i++) {
+// 		console.log(this.teachers[i]);
+// 		}
+// 	}
+
+// 	this.listStudentInfo = function() {
+// 		for (var i = 0; i< this.students.length; i++) {
+// 		console.log(this.students[i]);
+// 		}
+// 	}
+
+// 	this.listTeachersNames = function() {
+// 		for (var i = 0; i< this.teachers.length; i++) {
+// 		console.log(this.teachers[i].fname +' '+ this.teachers[i].lname);
+// 		}
+// 	}
+
+// 	this.listStudentNames = function() {
+// 		for (var i = 0; i< this.students.length; i++) {
+// 		console.log(this.students[i].fname +' '+ this.students[i].lname);
+// 		}
+// 	}
+// };
+
+// var Harvard = new School();
 
 
