@@ -68,14 +68,8 @@
 // 	};
 // };
 // var test = new Multiplier(6)
-//--------------------------------------
-// Create an object to represent a record player called Jukebox. 
-// Create another object to represent a Record.
 
-// The Jukebox should be able to tell you what Record is currently playing, and allow you to switch the currently playing record. 
-
-// The currently playing Record returned should be an object that allows you to query for the title and artist of that record 
-// as well as the title and artist combined together into one string
+//--------------------------------------Juke Box
 
 
  function Album(artist, title) {
@@ -83,15 +77,23 @@
  	this.title=title;
  }
 
-var record1 = new Album("The Jesus Lizard", "Shot");
-var record2 = new Album("Young Widows", "Easy Pain");
-var record3 = new Album("Mos Def", "Black on Both Sides");
-var record4 = new Album("Lauryn Hill", "The Misseducation of Lauryn Hill");
-
 function Jukebox(albums) {
-	this.albums = [record1, record2, record3, record4];
+	this.albums = [];
 	this.counter = 0
 	this.currentRecord = this.albums[this.counter];
+
+	
+	this.albums.push(new Album('The Jesus Lizard', 'Shot'))
+	this.albums.push(new Album('Young Widows', 'Easy Pain'))
+	this.albums.push(new Album("Mos Def", "Black on Both Sides"))
+	this.albums.push(new Album("Lauryn Hill", "The Misseducation of Lauryn Hill"))
+	this.albums.push(new Album('Fight Amp', 'Constantly Off'))
+	this.albums.push(new Album('Faking', 'Godddamn Cowards'))
+	this.albums.push(new Album('Black Flag', 'Damaged'))
+	this.albums.push(new Album('Minor Threat', 'Out Of Step'))
+	this.albums.push(new Album('Botch', 'We Are The Romans'))
+	this.albums.push(new Album('Coalesce', 'Functoning on Impatience'))
+	this.albums.push(new Album('Converge', 'You Fail Me'))
 
 	this.nextRecord = function() { 
 		if (this.counter < this.albums.length - 1) {
@@ -99,8 +101,7 @@ function Jukebox(albums) {
 		} else {
 			this.counter = 0
 		};	
-		this.currentRecord = this.albums[this.counter];
-	
+		this.currentRecord = this.albums[this.counter];	
 		return "Skipping to next record: '" + this.currentRecord.title + "' by " + this.currentRecord.artist + ".";
 	};
 
@@ -111,47 +112,15 @@ function Jukebox(albums) {
 			this.counter = this.counter - 1
 		};
 		this.currentRecord = this.albums[this.counter];
-  
 		return "Skipping to last record: '" + this.currentRecord.title + "' by " + this.currentRecord.artist + ".";
 	};
 
 	this.getCurrentRecord = function() {
 		return "You are currently listening to '" + this.currentRecord.title + "' by " + this.currentRecord.artist + ".";
 	};
-
 };
 
-var test = new Jukebox();
-
-
-// albums.push(artist, title)
-
-
-
-	// this.makeNew = function(new) {
-	// 	albums.push(new);
-	// }
-
-
-
-
-
-
-
-
-
-
-// function Password(pw) {
-// 	this.password = pw,
-// 	this.setPassword = function(newpw) {
-// 		this.password = newpw;
-// 	},
-// 	this.getPassword = function() {
-// 		return "password is " + this.password;
-// 	}
-// }
-
-// var thisIsMine = new Password("marco")
+var play = new Jukebox();
 
 
 
