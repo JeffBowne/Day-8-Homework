@@ -49,6 +49,39 @@
 // alternateGuitar.radius=12;
 // shitGuitar.radius=12;
 
+
+
+
+
+
+// DOESN'T WORK
+// var person = {
+// 	fname: "Jeff",
+// 	lname: "Bowne",
+// 	height: "6foot5",
+// 	hair: "brown",
+// 	myStats: function() {
+
+// 	    for (i=0; i < person.length; i++) { 
+// 		return person[i];
+// 		}
+// 	}
+// }
+// DOESN'T WORK
+
+
+
+
+// var getKeys = function(obj){
+// 		var keys = [];
+// 	for(var key in obj){
+// 	keys.push(key);
+// 	}
+// 	return keys;
+// }
+
+
+
 // //----------------------------------Multiplier 
 
 // function Multiplier() {
@@ -69,58 +102,89 @@
 // };
 // var test = new Multiplier(6)
 
-//--------------------------------------Juke Box
 
+// //--------------------------------------Juke Box
 
- function Album(artist, title) {
- 	this.artist=artist;
- 	this.title=title;
- }
+//  function Album(artist, title) {
+//  	this.artist=artist;
+//  	this.title=title;
+//  }
 
-function Jukebox(albums) {
-	this.albums = [];
-	this.counter = 0
-	this.currentRecord = this.albums[this.counter];
+// function Jukebox(albums) {
+// 	this.albums = [];
+// 	this.counter = 0
+// 	this.currentRecord = this.albums[this.counter];
 
 	
-	this.albums.push(new Album('The Jesus Lizard', 'Shot'))
-	this.albums.push(new Album('Young Widows', 'Easy Pain'))
-	this.albums.push(new Album("Mos Def", "Black on Both Sides"))
-	this.albums.push(new Album("Lauryn Hill", "The Misseducation of Lauryn Hill"))
-	this.albums.push(new Album('Fight Amp', 'Constantly Off'))
-	this.albums.push(new Album('Faking', 'Godddamn Cowards'))
-	this.albums.push(new Album('Black Flag', 'Damaged'))
-	this.albums.push(new Album('Minor Threat', 'Out Of Step'))
-	this.albums.push(new Album('Botch', 'We Are The Romans'))
-	this.albums.push(new Album('Coalesce', 'Functoning on Impatience'))
-	this.albums.push(new Album('Converge', 'You Fail Me'))
+// 	this.albums.push(new Album('The Jesus Lizard', 'Shot'))
+// 	this.albums.push(new Album('Young Widows', 'Easy Pain'))
+// 	this.albums.push(new Album("Mos Def", "Black on Both Sides"))
+// 	this.albums.push(new Album("Lauryn Hill", "The Misseducation of Lauryn Hill"))
+// 	this.albums.push(new Album('Fight Amp', 'Constantly Off'))
+// 	this.albums.push(new Album('Faking', 'Godddamn Cowards'))
+// 	this.albums.push(new Album('Black Flag', 'Damaged'))
+// 	this.albums.push(new Album('Minor Threat', 'Out Of Step'))
+// 	this.albums.push(new Album('Botch', 'We Are The Romans'))
+// 	this.albums.push(new Album('Coalesce', 'Functoning on Impatience'))
+// 	this.albums.push(new Album('Converge', 'You Fail Me'))
 
-	this.nextRecord = function() { 
-		if (this.counter < this.albums.length - 1) {
-			this.counter = this.counter + 1
-		} else {
-			this.counter = 0
-		};	
-		this.currentRecord = this.albums[this.counter];	
-		return "Skipping to next record: '" + this.currentRecord.title + "' by " + this.currentRecord.artist + ".";
-	};
+// 	this.nextRecord = function() { 
+// 		if (this.counter < this.albums.length - 1) {
+// 			this.counter = this.counter + 1
+// 		} else {
+// 			this.counter = 0
+// 		};	
+// 		this.currentRecord = this.albums[this.counter];	
+// 		return "Skipping to next record: '" + this.currentRecord.title + "' by " + this.currentRecord.artist + ".";
+// 	};
 
-	this.lastRecord = function() {
-		if (this.counter == 0) {
-			this.counter = this.albums.length - 1
-		} else {
-			this.counter = this.counter - 1
-		};
-		this.currentRecord = this.albums[this.counter];
-		return "Skipping to last record: '" + this.currentRecord.title + "' by " + this.currentRecord.artist + ".";
-	};
+// 	this.lastRecord = function() {
+// 		if (this.counter == 0) {
+// 			this.counter = this.albums.length - 1
+// 		} else {
+// 			this.counter = this.counter - 1
+// 		};
+// 		this.currentRecord = this.albums[this.counter];
+// 		return "Skipping to last record: '" + this.currentRecord.title + "' by " + this.currentRecord.artist + ".";
+// 	};
 
-	this.getCurrentRecord = function() {
-		return "You are currently listening to '" + this.currentRecord.title + "' by " + this.currentRecord.artist + ".";
-	};
-};
+// 	this.getCurrentRecord = function() {
+// 		return "You are currently listening to '" + this.currentRecord.title + "' by " + this.currentRecord.artist + ".";
+// 	};
+// };
 
-var play = new Jukebox();
+// var play = new Jukebox();
+
+
+// //---------------------------Photo Album 
+
+//  function Photo(file, taken) {
+//  	this.file=file;
+//  	this.taken=taken;
+//  }
+
+// function photoAlbum(photos) {
+// 	this.photos = [];
+	
+// 	this.photos.push(new Photo('photo01.jpg', 'West Philly'))
+// 	this.photos.push(new Photo('photo02.jpg', 'Grand Canyon'))
+// 	this.photos.push(new Photo('photo03.jpg', 'China'))
+// 	this.photos.push(new Photo('photo04.jpg', 'Harvard'))
+// 	this.photos.push(new Photo('photo05.jpg', 'Dive Bar'))
+// 	this.photos.push(new Photo('photo06.jpg', 'County Prison'))
+
+// 	this.addNew = function(name, place) {
+// 		this.photos.push(new Photo(name, place));
+// 	}
+// };
+
+// var view = new photoAlbum();
+
+
+
+
+
+
 
 
 
